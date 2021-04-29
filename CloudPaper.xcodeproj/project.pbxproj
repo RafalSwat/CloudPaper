@@ -3,19 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073C14C52639792500D15672 /* NoteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C14C42639792400D15672 /* NoteViewCell.swift */; };
+		0761F560263AB866004B6846 /* DateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0761F55F263AB866004B6846 /* DateConverter.swift */; };
 		076B1FBE2636B94D005F7B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B1FBD2636B94D005F7B56 /* AppDelegate.swift */; };
 		076B1FC02636B94D005F7B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B1FBF2636B94D005F7B56 /* SceneDelegate.swift */; };
 		076B1FC22636B94D005F7B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B1FC12636B94D005F7B56 /* ViewController.swift */; };
 		076B1FC52636B94D005F7B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076B1FC32636B94D005F7B56 /* Main.storyboard */; };
 		076B1FC72636B950005F7B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076B1FC62636B950005F7B56 /* Assets.xcassets */; };
 		076B1FCA2636B950005F7B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076B1FC82636B950005F7B56 /* LaunchScreen.storyboard */; };
+		076B1FD42636BC05005F7B56 /* background1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076B1FD22636BC05005F7B56 /* background1.jpg */; };
+		076B1FD52636BC05005F7B56 /* background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076B1FD32636BC05005F7B56 /* background2.jpg */; };
+		076B1FD82636C0F2005F7B56 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B1FD72636C0F2005F7B56 /* HomeViewController.swift */; };
+		076B1FDB2636CD37005F7B56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 076B1FDA2636CD37005F7B56 /* GoogleService-Info.plist */; };
+		076B1FEF2636D1DD005F7B56 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B1FEE2636D1DD005F7B56 /* Utilities.swift */; };
+		076B20042636DE2B005F7B56 /* FireBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B20032636DE2B005F7B56 /* FireBaseManager.swift */; };
+		076B200826371883005F7B56 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B200726371883005F7B56 /* Note.swift */; };
+		076B200F2637326C005F7B56 /* background0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076B200E2637326C005F7B56 /* background0.jpg */; };
+		076B201326382AA4005F7B56 /* BlurEffectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B201226382AA4005F7B56 /* BlurEffectExtension.swift */; };
+		076B201726382BB6005F7B56 /* SwipeToDeleteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B201626382BB6005F7B56 /* SwipeToDeleteExtension.swift */; };
+		076B204926389369005F7B56 /* KeyboardHandlingBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B204826389369005F7B56 /* KeyboardHandlingBaseVC.swift */; };
+		D9D261B1C3E7C54701033079 /* Pods_CloudPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D551D203F4EFD2FC75E5556 /* Pods_CloudPaper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		073C14C42639792400D15672 /* NoteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewCell.swift; sourceTree = "<group>"; };
+		0761F55F263AB866004B6846 /* DateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverter.swift; sourceTree = "<group>"; };
 		076B1FBA2636B94D005F7B56 /* CloudPaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudPaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		076B1FBD2636B94D005F7B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		076B1FBF2636B94D005F7B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +40,20 @@
 		076B1FC62636B950005F7B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076B1FC92636B950005F7B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		076B1FCB2636B950005F7B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076B1FD22636BC05005F7B56 /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background1.jpg; sourceTree = SOURCE_ROOT; };
+		076B1FD32636BC05005F7B56 /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = SOURCE_ROOT; };
+		076B1FD72636C0F2005F7B56 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		076B1FDA2636CD37005F7B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		076B1FEE2636D1DD005F7B56 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		076B20032636DE2B005F7B56 /* FireBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseManager.swift; sourceTree = "<group>"; };
+		076B200726371883005F7B56 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		076B200E2637326C005F7B56 /* background0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background0.jpg; sourceTree = SOURCE_ROOT; };
+		076B201226382AA4005F7B56 /* BlurEffectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectExtension.swift; sourceTree = "<group>"; };
+		076B201626382BB6005F7B56 /* SwipeToDeleteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDeleteExtension.swift; sourceTree = "<group>"; };
+		076B204826389369005F7B56 /* KeyboardHandlingBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingBaseVC.swift; sourceTree = "<group>"; };
+		59B3B302B2F91C033E874CDC /* Pods-CloudPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudPaper.release.xcconfig"; path = "Target Support Files/Pods-CloudPaper/Pods-CloudPaper.release.xcconfig"; sourceTree = "<group>"; };
+		8D551D203F4EFD2FC75E5556 /* Pods_CloudPaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudPaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D0266946738F5736034656 /* Pods-CloudPaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudPaper.debug.xcconfig"; path = "Target Support Files/Pods-CloudPaper/Pods-CloudPaper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D261B1C3E7C54701033079 /* Pods_CloudPaper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		068FD966EFB273C0A678CEA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5D0266946738F5736034656 /* Pods-CloudPaper.debug.xcconfig */,
+				59B3B302B2F91C033E874CDC /* Pods-CloudPaper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		076B1FB12636B94D005F7B56 = {
 			isa = PBXGroup;
 			children = (
 				076B1FBC2636B94D005F7B56 /* CloudPaper */,
 				076B1FBB2636B94D005F7B56 /* Products */,
+				068FD966EFB273C0A678CEA3 /* Pods */,
+				D2BB0DB6E6754F32BC178B5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +100,58 @@
 			children = (
 				076B1FBD2636B94D005F7B56 /* AppDelegate.swift */,
 				076B1FBF2636B94D005F7B56 /* SceneDelegate.swift */,
-				076B1FC12636B94D005F7B56 /* ViewController.swift */,
+				076B200626371864005F7B56 /* Models */,
+				076B1FED2636D1B4005F7B56 /* Handlers */,
+				076B1FEC2636D1A7005F7B56 /* ViewControllers */,
 				076B1FC32636B94D005F7B56 /* Main.storyboard */,
 				076B1FC62636B950005F7B56 /* Assets.xcassets */,
+				076B1FD22636BC05005F7B56 /* background1.jpg */,
+				076B1FD32636BC05005F7B56 /* background2.jpg */,
+				076B200E2637326C005F7B56 /* background0.jpg */,
 				076B1FC82636B950005F7B56 /* LaunchScreen.storyboard */,
 				076B1FCB2636B950005F7B56 /* Info.plist */,
+				076B1FDA2636CD37005F7B56 /* GoogleService-Info.plist */,
 			);
 			path = CloudPaper;
+			sourceTree = "<group>";
+		};
+		076B1FEC2636D1A7005F7B56 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				076B1FC12636B94D005F7B56 /* ViewController.swift */,
+				076B1FD72636C0F2005F7B56 /* HomeViewController.swift */,
+				073C14C42639792400D15672 /* NoteViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		076B1FED2636D1B4005F7B56 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				076B1FEE2636D1DD005F7B56 /* Utilities.swift */,
+				076B20032636DE2B005F7B56 /* FireBaseManager.swift */,
+				076B201226382AA4005F7B56 /* BlurEffectExtension.swift */,
+				076B201626382BB6005F7B56 /* SwipeToDeleteExtension.swift */,
+				076B204826389369005F7B56 /* KeyboardHandlingBaseVC.swift */,
+				0761F55F263AB866004B6846 /* DateConverter.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		076B200626371864005F7B56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				076B200726371883005F7B56 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2BB0DB6E6754F32BC178B5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D551D203F4EFD2FC75E5556 /* Pods_CloudPaper.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 076B1FCE2636B950005F7B56 /* Build configuration list for PBXNativeTarget "CloudPaper" */;
 			buildPhases = (
+				CA5A383F39C0D44473B9D951 /* [CP] Check Pods Manifest.lock */,
 				076B1FB62636B94D005F7B56 /* Sources */,
 				076B1FB72636B94D005F7B56 /* Frameworks */,
 				076B1FB82636B94D005F7B56 /* Resources */,
+				DCBCD713B39E0C846324C302 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +215,57 @@
 			files = (
 				076B1FCA2636B950005F7B56 /* LaunchScreen.storyboard in Resources */,
 				076B1FC72636B950005F7B56 /* Assets.xcassets in Resources */,
+				076B1FD52636BC05005F7B56 /* background2.jpg in Resources */,
 				076B1FC52636B94D005F7B56 /* Main.storyboard in Resources */,
+				076B1FD42636BC05005F7B56 /* background1.jpg in Resources */,
+				076B1FDB2636CD37005F7B56 /* GoogleService-Info.plist in Resources */,
+				076B200F2637326C005F7B56 /* background0.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA5A383F39C0D44473B9D951 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudPaper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCBCD713B39E0C846324C302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudPaper/Pods-CloudPaper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CloudPaper/Pods-CloudPaper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CloudPaper/Pods-CloudPaper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		076B1FB62636B94D005F7B56 /* Sources */ = {
@@ -138,8 +273,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				076B1FC22636B94D005F7B56 /* ViewController.swift in Sources */,
+				076B204926389369005F7B56 /* KeyboardHandlingBaseVC.swift in Sources */,
 				076B1FBE2636B94D005F7B56 /* AppDelegate.swift in Sources */,
+				076B200826371883005F7B56 /* Note.swift in Sources */,
+				076B201326382AA4005F7B56 /* BlurEffectExtension.swift in Sources */,
+				073C14C52639792500D15672 /* NoteViewCell.swift in Sources */,
+				076B20042636DE2B005F7B56 /* FireBaseManager.swift in Sources */,
 				076B1FC02636B94D005F7B56 /* SceneDelegate.swift in Sources */,
+				0761F560263AB866004B6846 /* DateConverter.swift in Sources */,
+				076B201726382BB6005F7B56 /* SwipeToDeleteExtension.swift in Sources */,
+				076B1FEF2636D1DD005F7B56 /* Utilities.swift in Sources */,
+				076B1FD82636C0F2005F7B56 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +427,7 @@
 		};
 		076B1FCF2636B950005F7B56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D0266946738F5736034656 /* Pods-CloudPaper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +447,7 @@
 		};
 		076B1FD02636B950005F7B56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B3B302B2F91C033E874CDC /* Pods-CloudPaper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
