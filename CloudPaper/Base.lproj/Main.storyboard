@@ -218,19 +218,23 @@
                             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ep-r2-fOC">
-                            <rect key="frame" x="20" y="30" width="260" height="42"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <rect key="frame" x="20" y="30" width="260" height="61"/>
+                            <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="32"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <size key="shadowOffset" width="-1" height="1"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-0j-nh3" userLabel="HStack">
-                            <rect key="frame" x="20" y="112" width="260" height="50"/>
+                            <rect key="frame" x="20" y="131" width="260" height="50"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose date: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-dc-tzd">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose date: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="XLI-dc-tzd">
                                     <rect key="frame" x="0.0" y="0.0" width="130" height="50"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
+                                    <color key="shadowColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <size key="shadowOffset" width="-1" height="1"/>
                                 </label>
                                 <datePicker contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="Bdr-4f-Kep">
                                     <rect key="frame" x="130" y="0.0" width="130" height="50"/>
@@ -241,7 +245,7 @@
                             </constraints>
                         </stackView>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fk-S2-eAk">
-                            <rect key="frame" x="20" y="172" width="260" height="40"/>
+                            <rect key="frame" x="20" y="191" width="260" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Zib-tt-TXd"/>
                             </constraints>
@@ -249,16 +253,16 @@
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foM-OD-xmr">
-                            <rect key="frame" x="20" y="217" width="260" height="0.0"/>
+                            <rect key="frame" x="20" y="236" width="260" height="0.0"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hT8-gv-XE2" userLabel="HStack">
-                            <rect key="frame" x="20" y="225" width="260" height="55"/>
+                            <rect key="frame" x="20" y="244" width="260" height="36"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mL8-I3-Sth">
-                                    <rect key="frame" x="0.0" y="0.0" width="130" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="36"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="Cancel">
                                         <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -268,7 +272,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKO-kL-3yp">
-                                    <rect key="frame" x="130" y="0.0" width="130" height="55"/>
+                                    <rect key="frame" x="130" y="0.0" width="130" height="36"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <state key="normal" title="Save Note"/>
                                     <connections>
@@ -316,6 +320,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zCU-5J-VeJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                            <color key="textShadowColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="-1" vertical="1"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
