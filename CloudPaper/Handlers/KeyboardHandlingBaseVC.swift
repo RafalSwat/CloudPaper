@@ -17,13 +17,12 @@ class KeyboardHandlingBaseVC: UIViewController {
         
         subscribeToNotification(UIResponder.keyboardWillShowNotification, selector: #selector(keyboardWillShow))
         subscribeToNotification(UIResponder.keyboardWillHideNotification, selector: #selector(keyboardWillHide))
-
         initializeHideKeyboard()
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
         unsubscribeFromAllNotifications()
     }
 
@@ -31,7 +30,7 @@ class KeyboardHandlingBaseVC: UIViewController {
 
 // MARK : Keyboard Dismissal Handling on Tap
 private extension KeyboardHandlingBaseVC {
-    
+
     func initializeHideKeyboard(){
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
             target: self,

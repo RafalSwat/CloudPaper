@@ -39,14 +39,14 @@
 		076B1FC62636B950005F7B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076B1FC92636B950005F7B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		076B1FCB2636B950005F7B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		076B1FD22636BC05005F7B56 /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background1.jpg; sourceTree = SOURCE_ROOT; };
-		076B1FD32636BC05005F7B56 /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background2.jpg; sourceTree = SOURCE_ROOT; };
+		076B1FD22636BC05005F7B56 /* background1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background1.jpg; path = CloudPaper/backgrounds/background1.jpg; sourceTree = SOURCE_ROOT; };
+		076B1FD32636BC05005F7B56 /* background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background2.jpg; path = CloudPaper/backgrounds/background2.jpg; sourceTree = SOURCE_ROOT; };
 		076B1FD72636C0F2005F7B56 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		076B1FDA2636CD37005F7B56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		076B1FEE2636D1DD005F7B56 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		076B20032636DE2B005F7B56 /* FireBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseManager.swift; sourceTree = "<group>"; };
 		076B200726371883005F7B56 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		076B200E2637326C005F7B56 /* background0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background0.jpg; sourceTree = SOURCE_ROOT; };
+		076B200E2637326C005F7B56 /* background0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background0.jpg; path = CloudPaper/backgrounds/background0.jpg; sourceTree = SOURCE_ROOT; };
 		076B201626382BB6005F7B56 /* SwipeToDeleteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDeleteExtension.swift; sourceTree = "<group>"; };
 		076B204826389369005F7B56 /* KeyboardHandlingBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingBaseVC.swift; sourceTree = "<group>"; };
 		59B3B302B2F91C033E874CDC /* Pods-CloudPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudPaper.release.xcconfig"; path = "Target Support Files/Pods-CloudPaper/Pods-CloudPaper.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +73,16 @@
 				59B3B302B2F91C033E874CDC /* Pods-CloudPaper.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		075A5C8E264188CE00A5FAF6 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				076B1FD22636BC05005F7B56 /* background1.jpg */,
+				076B1FD32636BC05005F7B56 /* background2.jpg */,
+				076B200E2637326C005F7B56 /* background0.jpg */,
+			);
+			path = backgrounds;
 			sourceTree = "<group>";
 		};
 		076B1FB12636B94D005F7B56 = {
@@ -103,9 +113,7 @@
 				076B1FEC2636D1A7005F7B56 /* ViewControllers */,
 				076B1FC32636B94D005F7B56 /* Main.storyboard */,
 				076B1FC62636B950005F7B56 /* Assets.xcassets */,
-				076B1FD22636BC05005F7B56 /* background1.jpg */,
-				076B1FD32636BC05005F7B56 /* background2.jpg */,
-				076B200E2637326C005F7B56 /* background0.jpg */,
+				075A5C8E264188CE00A5FAF6 /* backgrounds */,
 				076B1FC82636B950005F7B56 /* LaunchScreen.storyboard */,
 				076B1FCB2636B950005F7B56 /* Info.plist */,
 				076B1FDA2636CD37005F7B56 /* GoogleService-Info.plist */,

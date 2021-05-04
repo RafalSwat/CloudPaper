@@ -12,7 +12,6 @@ extension HomeViewController {
     
     // Add swipe configuration
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-
         let delete = deleteAction(at: indexPath)
         return UISwipeActionsConfiguration(actions: [delete])
     }
@@ -32,11 +31,9 @@ extension HomeViewController {
                     print("\(errorDescription ?? "Error during delete action!")")
                 }
             }
-            
         }
 
         action.backgroundColor = .red
         return action
     }
-
 }

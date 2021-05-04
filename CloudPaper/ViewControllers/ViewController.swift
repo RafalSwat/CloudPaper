@@ -25,21 +25,17 @@ class ViewController: KeyboardHandlingBaseVC {
         // Do any additional setup after loading the view.
         tryAutoLogin()
         setupSecureFiledButton(textField: passwordTextField)
-
-        
     }
+    
     @IBAction func switchSegmentedPicker(_ sender: Any) {
         if segmentedPicker.selectedSegmentIndex == 0 {
-            
             logRegButton.setTitle("Login", for: UIControl.State.normal)
-            
         } else {
-            
             logRegButton.setTitle("Registration", for: UIControl.State.normal)
         }
     }
+    
     @IBAction func logRegButtonPressed(_ sender: Any) {
-        
         if let error = validateTextFields() {
             warningLabel.text = error
         } else {
@@ -67,6 +63,7 @@ class ViewController: KeyboardHandlingBaseVC {
             }
         }
     }
+    
     @IBAction func showPassword(_ sender: Any) {
         if securePassword {
             securePassword                      = false
@@ -89,22 +86,27 @@ class ViewController: KeyboardHandlingBaseVC {
             passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Please, fill in all fields!"
         }
+        
         let cleanPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
         if !Utilities.checkPassword(password: cleanPassword) {
             return "Please, make sure that password is at least 8 characters long, contains a special charcter and a number."
         }
         return nil
     }
+    
     func goHome() {
         loginTextField.text    = ""
         passwordTextField.text = ""
         performSegue(withIdentifier: "goHome", sender: self)
     }
+    
     func setupSecureFiledButton(textField: UITextField) {
         secureFieldButton.setImage(UIImage(systemName: "eye"), for: .normal)
         secureFieldButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -16, bottom: 0, right: 0)
         secureFieldButton.addTarget(self, action: #selector(self.showPassword), for: .touchUpInside)
-        textField.rightView = secureFieldButton
+        
+        textField.rightView     = secureFieldButton
         textField.rightViewMode = .always
     }
     

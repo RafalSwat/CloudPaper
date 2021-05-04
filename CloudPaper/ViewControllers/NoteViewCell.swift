@@ -13,11 +13,12 @@ protocol NoteCellDelegate {
 
 class NoteViewCell: UITableViewCell {
 
-    @IBOutlet weak var noteText: UILabel!
-    @IBOutlet weak var date: UILabel!
-    @IBOutlet weak var doneImage: UIImageView!
-    var index = 0
-    var cellDelegate: NoteCellDelegate!
+    @IBOutlet weak var noteText  : UILabel!
+    @IBOutlet weak var date      : UILabel!
+    @IBOutlet weak var doneImage : UIImageView!
+    
+    var index        = 0
+    var cellDelegate : NoteCellDelegate!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,7 +29,8 @@ class NoteViewCell: UITableViewCell {
     
     func setupNoteCell(note: Note, index: Int) {
         noteText?.text = note.text
-        date.text = note.date
+        date.text      = note.date
+        
         if note.done == true {
             doneImage.image = UIImage(systemName: "checkmark")
         } else {

@@ -29,6 +29,7 @@ class FireBaseManager {
             }
         }
     }
+    
     func login(email: String, password: String, completion: @escaping (Bool, String?)->()) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil {
@@ -38,6 +39,7 @@ class FireBaseManager {
             }
         }
     }
+    
     func logout(completion: @escaping (Bool, String?)->()) {
         do {
             try Auth.auth().signOut()
@@ -46,14 +48,15 @@ class FireBaseManager {
             completion(false, "Error: can`t Log Out: \(error.localizedDescription)")
         }
     }
+    
     func autoLogin(completion: @escaping (Bool)->()) {
-        
         if Auth.auth().currentUser != nil {
            completion(true)
         } else {
             completion(false)
         }
     }
+    
     func addNote(note: Note, completion: @escaping (Bool, String?)->()) {
         if let user  = Auth.auth().currentUser {
             self.userDBRef.child("Notes").child(user.uid).child(note.id).setValue(
@@ -71,6 +74,7 @@ class FireBaseManager {
             completion(false, "Error: I cannot find the logged in user!")
         }
     }
+    
     func removeNote(note: Note, completion: @escaping (Bool, String?)->()) {
         if let user  = Auth.auth().currentUser {
             self.userDBRef.child("Notes").child(user.uid).child(note.id).removeValue() { error, ref in
@@ -87,15 +91,19 @@ class FireBaseManager {
     
     func dwonloadNotes(completion: @escaping ([Note], Bool, String?)->()) {
         var notes = [Note]()
+        
         if let user  = Auth.auth().currentUser {
             self.userDBRef.child("Notes").child(user.uid).observeSingleEvent(of: .value) { (userSnapshot) in
+                
                 var counter = 0
                 let objectCount = userSnapshot.childrenCount
+                
                 if let userNotes = userSnapshot.children.allObjects as? [DataSnapshot]  {
                     for snap in userNotes  {
                         if let snapValues = snap.value as? [String : Any] {
-                            let id = snap.key
-                            let txt = snapValues["note"] as! String
+                            
+                            let id   = snap.key
+                            let txt  = snapValues["note"] as! String
                             let date = snapValues["date"] as! String
                             let done = snapValues["done"] as! Bool
                             
@@ -105,6 +113,7 @@ class FireBaseManager {
                                             done: done)
                             notes.append(note)
                             counter += 1
+                            
                             if counter == objectCount {
                                 completion(notes, true, nil)
                             }
