@@ -68,7 +68,7 @@ class HomeViewController: KeyboardHandlingBaseVC {
         }
     }
     func animateIn() {
-        self.backgroundImage.applyBlurEffect()
+        self.view.backgroundColor = .darkGray
         self.view.addSubview(addNoteView)
         addNoteView.center = self.view.center
         addNoteView.layer.cornerRadius = 10
@@ -77,16 +77,16 @@ class HomeViewController: KeyboardHandlingBaseVC {
         addNoteView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
         addNoteView.alpha = 0
 
-        UIView.animate(withDuration: 0.4, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             self.addNoteView.alpha = 1
             self.addNoteView.transform = CGAffineTransform.identity
         })
     }
     @objc func animateOut() {
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             self.addNoteView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
             self.addNoteView.alpha = 0
-            self.backgroundImage.removeBlurEffect()
+            self.view.backgroundColor = .systemBackground
 
         }) { (success:Bool) in
             self.addNoteView.removeFromSuperview()

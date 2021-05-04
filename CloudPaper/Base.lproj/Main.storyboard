@@ -214,6 +214,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5tD-xp-Sfc">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ep-r2-fOC">
                             <rect key="frame" x="20" y="30" width="260" height="42"/>
                             <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -278,16 +281,18 @@
                     <viewLayoutGuide key="safeArea" id="q24-A4-XRF"/>
                     <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.91349357958661015" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="0ep-r2-fOC" firstAttribute="centerX" secondItem="OpT-nF-CTi" secondAttribute="centerX" id="068-w0-vLV"/>
                         <constraint firstItem="9fk-S2-eAk" firstAttribute="leading" secondItem="q24-A4-XRF" secondAttribute="leading" constant="20" id="31H-Md-rJT"/>
                         <constraint firstItem="A2y-0j-nh3" firstAttribute="top" secondItem="0ep-r2-fOC" secondAttribute="bottom" constant="40" id="E31-vq-xPS"/>
                         <constraint firstItem="A2y-0j-nh3" firstAttribute="centerX" secondItem="OpT-nF-CTi" secondAttribute="centerX" id="H9j-Og-bjW"/>
                         <constraint firstItem="q24-A4-XRF" firstAttribute="trailing" secondItem="foM-OD-xmr" secondAttribute="trailing" constant="20" id="K67-WM-DRp"/>
                         <constraint firstItem="hT8-gv-XE2" firstAttribute="top" secondItem="foM-OD-xmr" secondAttribute="bottom" constant="8" id="Kze-JF-MbH"/>
+                        <constraint firstItem="5tD-xp-Sfc" firstAttribute="top" secondItem="OpT-nF-CTi" secondAttribute="top" id="MDg-fU-R8a"/>
+                        <constraint firstAttribute="bottom" secondItem="5tD-xp-Sfc" secondAttribute="bottom" id="Mzm-84-aKQ"/>
                         <constraint firstItem="hT8-gv-XE2" firstAttribute="leading" secondItem="OpT-nF-CTi" secondAttribute="leading" constant="20" id="TyF-dc-Ago"/>
                         <constraint firstItem="q24-A4-XRF" firstAttribute="trailing" secondItem="0ep-r2-fOC" secondAttribute="trailing" constant="20" id="YVk-f7-oei"/>
                         <constraint firstItem="q24-A4-XRF" firstAttribute="trailing" secondItem="A2y-0j-nh3" secondAttribute="trailing" constant="20" id="axE-rV-uPi"/>
                         <constraint firstItem="q24-A4-XRF" firstAttribute="trailing" secondItem="9fk-S2-eAk" secondAttribute="trailing" constant="20" id="cZM-Y0-GNe"/>
+                        <constraint firstAttribute="trailing" secondItem="5tD-xp-Sfc" secondAttribute="trailing" id="cox-sg-7f2"/>
                         <constraint firstItem="A2y-0j-nh3" firstAttribute="leading" secondItem="q24-A4-XRF" secondAttribute="leading" constant="20" id="gS9-YT-GLP"/>
                         <constraint firstItem="0ep-r2-fOC" firstAttribute="leading" secondItem="q24-A4-XRF" secondAttribute="leading" constant="20" id="hHj-5t-2EZ"/>
                         <constraint firstAttribute="bottom" secondItem="hT8-gv-XE2" secondAttribute="bottom" constant="20" id="jw1-vp-xc2"/>
@@ -297,6 +302,7 @@
                         <constraint firstAttribute="trailing" secondItem="hT8-gv-XE2" secondAttribute="trailing" constant="20" id="vvL-dn-JA5"/>
                         <constraint firstItem="0ep-r2-fOC" firstAttribute="top" secondItem="OpT-nF-CTi" secondAttribute="top" constant="30" id="x8M-fn-Zm6"/>
                         <constraint firstItem="foM-OD-xmr" firstAttribute="top" secondItem="9fk-S2-eAk" secondAttribute="bottom" constant="5" id="ybQ-Sh-8G1"/>
+                        <constraint firstItem="5tD-xp-Sfc" firstAttribute="leading" secondItem="OpT-nF-CTi" secondAttribute="leading" id="yd1-DU-1cA"/>
                     </constraints>
                 </view>
             </objects>
@@ -322,6 +328,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background0.jpg" width="4724" height="7086"/>
         <image name="background1.jpg" width="3024" height="4032"/>
         <image name="background2.jpg" width="2837" height="3785"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
