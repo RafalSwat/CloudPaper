@@ -23,7 +23,6 @@
 		076B20042636DE2B005F7B56 /* FireBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B20032636DE2B005F7B56 /* FireBaseManager.swift */; };
 		076B200826371883005F7B56 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B200726371883005F7B56 /* Note.swift */; };
 		076B200F2637326C005F7B56 /* background0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076B200E2637326C005F7B56 /* background0.jpg */; };
-		076B201326382AA4005F7B56 /* BlurEffectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B201226382AA4005F7B56 /* BlurEffectExtension.swift */; };
 		076B201726382BB6005F7B56 /* SwipeToDeleteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B201626382BB6005F7B56 /* SwipeToDeleteExtension.swift */; };
 		076B204926389369005F7B56 /* KeyboardHandlingBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B204826389369005F7B56 /* KeyboardHandlingBaseVC.swift */; };
 		D9D261B1C3E7C54701033079 /* Pods_CloudPaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D551D203F4EFD2FC75E5556 /* Pods_CloudPaper.framework */; };
@@ -48,7 +47,6 @@
 		076B20032636DE2B005F7B56 /* FireBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseManager.swift; sourceTree = "<group>"; };
 		076B200726371883005F7B56 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		076B200E2637326C005F7B56 /* background0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background0.jpg; sourceTree = SOURCE_ROOT; };
-		076B201226382AA4005F7B56 /* BlurEffectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectExtension.swift; sourceTree = "<group>"; };
 		076B201626382BB6005F7B56 /* SwipeToDeleteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDeleteExtension.swift; sourceTree = "<group>"; };
 		076B204826389369005F7B56 /* KeyboardHandlingBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandlingBaseVC.swift; sourceTree = "<group>"; };
 		59B3B302B2F91C033E874CDC /* Pods-CloudPaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudPaper.release.xcconfig"; path = "Target Support Files/Pods-CloudPaper/Pods-CloudPaper.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			children = (
 				076B1FEE2636D1DD005F7B56 /* Utilities.swift */,
 				076B20032636DE2B005F7B56 /* FireBaseManager.swift */,
-				076B201226382AA4005F7B56 /* BlurEffectExtension.swift */,
 				076B201626382BB6005F7B56 /* SwipeToDeleteExtension.swift */,
 				076B204826389369005F7B56 /* KeyboardHandlingBaseVC.swift */,
 				0761F55F263AB866004B6846 /* DateConverter.swift */,
@@ -276,7 +273,6 @@
 				076B204926389369005F7B56 /* KeyboardHandlingBaseVC.swift in Sources */,
 				076B1FBE2636B94D005F7B56 /* AppDelegate.swift in Sources */,
 				076B200826371883005F7B56 /* Note.swift in Sources */,
-				076B201326382AA4005F7B56 /* BlurEffectExtension.swift in Sources */,
 				073C14C52639792500D15672 /* NoteViewCell.swift in Sources */,
 				076B20042636DE2B005F7B56 /* FireBaseManager.swift in Sources */,
 				076B1FC02636B94D005F7B56 /* SceneDelegate.swift in Sources */,
