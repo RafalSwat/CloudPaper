@@ -4,7 +4,7 @@
 ## Description
 
 Application that allows you to store notes in a real-time database. 
-Covers Basic functionalities: adding, removing, updating.
+Covers basic functionalities: adding, removing, updating.
 Authentication by email and password.
 
 ## Gifs
